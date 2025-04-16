@@ -84,8 +84,38 @@ def power_Numbers(number1: int, number2: int) -> int:
     ## Returns:
         - int: the result of exponentiation.
     """
-    print(number1 ** number2)
+    print(number1**number2)
     return number1**number2
+
+
+def average_Numbers(number1: int, number2: int) -> float:
+    """
+    This Function will return the average of two numbers.
+
+    ## Args:
+        - number1 (int): the first number.
+        - number2 (int): the second number.
+
+    ## Returns:
+        - float: the average of the two numbers.
+    """
+    return (number1 + number2) / 2
+
+
+def gcd_Numbers(number1: int, number2: int) -> int:
+    """
+    This Function will return the greatest common divisor (GCD) of two numbers.
+
+    ## Args:
+        - number1 (int): the first number.
+        - number2 (int): the second number.
+
+    ## Returns:
+        - int: the greatest common divisor of the two numbers.
+    """
+    import math
+
+    return math.gcd(number1, number2)
 
 
 __all__ = [
@@ -95,4 +125,6 @@ __all__ = [
     "divide_Numbers",
     "modulo_Numbers",
     "power_Numbers",
+    "average_Numbers",
+    "gcd_Numbers",
 ]
