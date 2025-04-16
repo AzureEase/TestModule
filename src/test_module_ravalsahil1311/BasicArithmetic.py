@@ -24,6 +24,7 @@ def subtract_Numbers(number1: int, number2: int) -> int:
     ## Returns:
         - int: the result of subtraction.
     """
+    print(number1 - number2)
     return number1 - number2
 
 
@@ -38,6 +39,7 @@ def multiply_Numbers(number1: int, number2: int) -> int:
     ## Returns:
         - int: the result of multiplication.
     """
+    print(number1 * number2)
     return number1 * number2
 
 
@@ -52,6 +54,7 @@ def divide_Numbers(number1: int, number2: int) -> float:
     ## Returns:
         - float: the result of division.
     """
+    print(number1 / number2)
     return number1 / number2
 
 
@@ -66,6 +69,7 @@ def modulo_Numbers(number1: int, number2: int) -> int:
     ## Returns:
         - int: the remainder of the division.
     """
+    print(number1 % number2)
     return number1 % number2
 
 
@@ -80,6 +84,7 @@ def power_Numbers(number1: int, number2: int) -> int:
     ## Returns:
         - int: the result of exponentiation.
     """
+    print(number1 ** number2)
     return number1**number2
 
 
