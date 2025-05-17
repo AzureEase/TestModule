@@ -54,6 +54,8 @@ def divide_Numbers(number1: int, number2: int) -> float:
     ## Returns:
         - float: the result of division.
     """
+    if number2 == 0:
+        raise ValueError("Division by zero is not allowed.")
     print(number1 / number2)
     return number1 / number2
 
@@ -114,6 +116,12 @@ def gcd_Numbers(number1: int, number2: int) -> int:
         - int: the greatest common divisor of the two numbers.
     """
     import math
+
+    if number1 < 0 or number2 < 0:
+        raise ValueError("GCD is not defined for negative numbers.")
+
+    if number1 == 0 or number2 == 0:
+        raise ValueError("GCD is not defined for zero and zero.")
 
     return math.gcd(number1, number2)
 
