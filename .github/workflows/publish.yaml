@@ -1,14 +1,17 @@
 name: Build and Publish to PyPI
 
 on:
-  push:
+  pull_request:
+    types:
+      - closed
     branches:
-      - production
       - main
+      - production
 
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
+    if: github.event.pull_request.merged == true  # Ensure PR was merged, not just closed
 
     steps:
       - name: Checkout source
@@ -19,9 +22,13 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Install dependencies
+      - name: Install dependencies from requirements.txt
         run: |
           python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Install build and twine
+        run: |
           pip install build twine
 
       - name: Build the package
