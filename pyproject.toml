@@ -22,8 +22,8 @@ license = "MIT"
 license-files = ["LICENSE*"]
 
 [project.urls]
-Homepage = "https://github.com/AzureEase/TestModule"
-Issues = "https://github.com/AzureEase/TestModule/issues"
+Homepage = "https://github.com/VectorVerse/TestModule"
+Issues = "https://github.com/VectorVerse/TestModule/issues"
 
 
 [tool.pytest.ini_options]
